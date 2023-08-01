@@ -1,0 +1,443 @@
+/* 
+    mobile -----------------> 320px - 480px;
+    ipads/tablets: ---------> 481px - 768px;
+    small screen/laptops: --> 769px - 1024px;
+    Desktop/large screens: -> 1025px - 1200px;
+    Tv/Extra space: --------> 1201px - 999999px;
+*/
+
+/* 
+there are two approaches:
+1. Mobile First Approach 
+2. Desktop First Approach 
+*/
+
+
+/* demo of media query - resposive design */
+/* @media(min-width: 675px) {
+    h1{
+        color: white;
+    }
+
+    body{
+        background-color: #ffafcc;
+    }
+    
+} */
+
+/* user-agent / Default Brower Setting reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+/* Document Body Intitializations */
+body{
+    font-family: 'roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ! Navigation Bar */
+
+.nav-bar{
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    /* background-color: aqua; */
+}
+
+
+
+.nav-bar img{
+    height: 6.7rem;
+    border-radius: 4rem;
+    margin-left: 10px;
+    /* position: absolute; */
+    /* top:5px; */
+    /* left: 0; */
+    
+}
+
+
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.2rem;
+    /* border: 2px solid yellow; */
+    /* padding: 2px; */
+}
+
+.nav-bar li{
+    /* display: inline-block; */
+    font-size: 1.4rem;
+    padding: 0.5rem;
+}
+
+.nav-bar a{
+    text-decoration: none;
+}
+
+.nav-bar #nav-a-newpost{
+    background-color: #ff5a5fff;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2em;
+    /* this will restrict the text splitting into multiple lines when width is decreased */
+    white-space: nowrap;
+}
+
+
+
+/* for nav Div Container anchor links */
+
+/* .nav-container{
+    display: flex;
+    
+    flex-direction: row;
+    align-items: center;
+    gap: 0 5px;
+    margin: 3rem;
+} */
+
+/* .nav-container a{
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+} */
+
+/* .nav-container #nav-a-newpost{
+    background-color: #ff5a5fff;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.6em 1.1em;
+    border-radius: 0.4em;
+    margin-left: 0.8em;
+} */
+
+
+/* ! Header */
+header{
+    min-height: 80vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: flex-start;
+    /* align-items:center; */
+    background-image: url(./images/headerbg.jpg);
+    background-position: center;
+    background-size:cover;
+    /* object-fit:fill; */
+    /* background-attachment:fixed; */
+    /* width: 100%; */
+}
+
+.header-content{
+    text-align: center;
+    padding: 10px;
+}
+
+.header-content h1{
+    font-size: 5rem;
+    color: #14213d;
+    /* font-family: 'roboto', sans-serif; */
+    /* text-align: center; */
+}
+
+.header-content p{
+    font-weight: 400;
+    font-size: 1.4rem;
+    /* font-family: 'roboto', sans-serif; */
+    /* text-align: center; */
+    color: #333333ff;
+    margin: 20px;
+}
+
+.header-content a{
+    text-decoration: none;
+    color: #333333ff;
+    font-size: 1.2em;
+    font-weight: 800;
+    /* font-family: roboto, sans-serif; */
+    /* text-align: center; */
+    background-color: white;
+    border-radius: 0.3em;
+    border: 1px solid black;
+    padding: 0.7em 1em;
+}
+
+/* ! Content/Main CSS */
+
+/* main section - post */
+.main-container{
+    display: flex;
+    /* gap: 10px; */
+
+}
+
+.main-container main{
+    width: 70%;
+    padding: 10px;    
+}
+
+main article{
+    padding: 10px;
+}
+
+.post-content h1,img,p,a{
+    margin-bottom: 0.4em;
+}
+
+.post-content h1{
+    font-size: 3rem;
+    color: #212d48ff;
+}
+
+.post-content img{
+    width: 100%;
+}
+
+.post-info{
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+.post-info span{
+    margin-left: 5px;
+    /* padding: 5px; */
+    display: inline-block;
+    padding: 4px 0;
+}
+
+.post-body{
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    margin-bottom: 1.2em;
+}
+
+.post-content{
+    
+    /* margin: 30px; */
+    /* background-color: red; */
+    font-size: 1.4rem;
+}
+
+
+/* aside sidebar */
+.sidebar{
+    /* text-align: center; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center;
+    padding: 10px;
+    margin: 10px; */
+}
+
+.about-me{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.sidebar{
+    width: 30%;
+}
+
+.sidebar .about-me h2{
+    font-size: 2.1rem;
+}
+
+.sidebar .about-me img{
+    border-radius: 100%;
+    width: 50%;
+}
+
+.sidebar .about-name{
+    padding: 2px 1.7rem;
+}
+
+.sidebar small{
+    font-size: 1.15rem;
+    margin-top: 4px;
+}
+
+.sidebar .about-me-bio{
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    margin-bottom: 25px;
+}
+
+
+.sidebar-content{
+    margin: 10px;
+    margin-top: -10px;
+}
+
+.sidebar-content h1{
+    font-size: 1.65rem;
+}
+
+
+.sidebar-content img{
+    width: 100%;
+}
+
+.post-info{
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+
+.post-info
+span{
+    margin-left: 5px;
+    /* padding: 5px; */
+    display: inline-block;
+    padding: 4px 0;
+}
+
+.sidebar-content .sidebar-post-body{
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    margin-bottom: 1.3em;
+}
+
+.sidebar-content a{
+    font-size: 1.4rem;
+}
+
+/* ! Footer CSS */
+
+footer{
+    background-color: #163750;
+    padding: 10px;
+    /* width: 50%; */
+    /* margin: 0 auto; */
+}
+
+.about{
+    /* background-color: #003049ff;
+    padding: 10px; */
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about h1{
+    text-align: center;
+    /* padding: 10px; */
+}
+.about .logo-text-first{
+    color: #ffbe0bff;
+    font-family: roboto, sans-serif;
+    font-size: 5rem;
+}
+
+.about .logo-text-second{
+    color: white;
+    font-size: 3rem;
+}
+
+.about>p{
+    font-size: 1.4rem;
+    color: #8d99bfff;
+}
+
+.about .contact{
+    width: fit-content;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.contact span{
+    display: block;
+    padding: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.contact i{
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.contact .email a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(71, 122, 194);
+}
+
+.social-media{
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.social-media a{
+    font-size: 1.8rem;
+    padding-right: 8px;
+    margin: 0 8px;
+}
+
+
+
+/* ! Desktop first - Resposive Design */
+@media (max-width: 580px) {
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0;
+    }
+
+    .nav-bar img{
+        height: 5rem;
+        width: 5rem;
+        margin: 0 auto;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .nav-bar ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0.6rem;
+    }
+
+    .nav-bar li{
+        padding: 0.2rem;
+    }
+
+    .main-container{
+        flex-direction: column;
+    }
+    .main-container main{
+        width: 100%;
+    }
+    .main-container .sidebar{
+        width: 100%;
+    }
+
+    .main-container .sidebar .about-me img{
+        width: 25%;
+    }
+}

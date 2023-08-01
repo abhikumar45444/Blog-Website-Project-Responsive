@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/42a182743f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css">
+    <title>Responsive Design Project</title>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="nav-bar">
+            <img src="./images/logo.png" alt="logo" class="nav-logo">
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#" id="nav-a-newpost">New Post</a></li>
+            </ul>
+            <!-- using Div container nav links -->
+            <!-- <div class="nav-container">
+            <a href="#">Home</a>
+            <a href="#">Posts</a>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+            <a href="#" id="nav-a-newpost">New Post</a>
+        </div> -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+            <div class="header-content">
+            <h1>You write, We read</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat Lorem dolor</p>
+            <a href="#">Create New Post</a>
+        </div>
+    </header>
+
+    <!-- Content/Main -->
+    <div class="main-container">
+        <main>
+            <article class="post-content" >
+                <h1>Why MERN Stack is on Hot Cake?</h1>
+                <img src="./images/post2.jpg" alt="cat-image">
+               <p class="post-info">
+                    <span class="post-author">
+                        <i class="fa-solid fa-user" style="color: #6d6f74;"></i>
+                        <a href="#">John Doe</a>
+                    </span>
+                    <!-- &nbsp;
+                    &nbsp; -->
+                    <span class="post-date">
+                        <i class="fa-regular fa-calendar-days" style="color: #6d6f74;"></i>
+                        <time>
+                            January 1, 2020
+                        </time>
+                    </span>
+               </p>
+               <p class="post-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia itaque inventore culpa placeat! Cum nam optio, labore, voluptas sunt quam rem cupiditate laboriosam amet reiciendis velit doloribus eum! Repudiandae, odio?
+               </p>
+               <a href="#" >Continue Reading...</a>
+            </article>
+            <article class="post-content" >
+                <h1>Become a Web Developer</h1>
+                <img src="./images/post3.jpg" alt="cat-image">
+               <p class="post-info">
+                    <span class="post-author">
+                        <i class="fa-solid fa-user" style="color: #6d6f74;"></i>
+                        <a href="#">John Doe</a>
+                    </span>
+                    <!-- &nbsp;
+                    &nbsp; -->
+                    <span class="post-date">
+                        <i class="fa-regular fa-calendar-days" style="color: #6d6f74;"></i>
+                        <time>
+                            January 1, 2020
+                        </time>
+                    </span>
+               </p>
+               <p class="post-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia itaque inventore culpa placeat! Cum nam optio, labore, voluptas sunt quam rem cupiditate laboriosam amet reiciendis velit doloribus eum! Repudiandae, odio?
+               </p>
+               <a href="#">Continue Reading...</a>
+            </article>
+            <article class="post-content" >
+                <h1>How to Take care of Cat</h1>
+                <img src="./images/post7.jpg" alt="cat-image">
+               <p class="post-info">
+                    <span class="post-author">
+                        <i class="fa-solid fa-user" style="color: #6d6f74;"></i>
+                        <a href="#">John Doe</a>
+                    </span>
+                    <!-- &nbsp;
+                    &nbsp; -->
+                    <span class="post-date">
+                        <i class="fa-regular fa-calendar-days" style="color: #6d6f74;"></i>
+                        <time>
+                            January 1, 2020
+                        </time>
+                    </span>
+               </p>
+               <p class="post-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia itaque inventore culpa placeat! Cum nam optio, labore, voluptas sunt quam rem cupiditate laboriosam amet reiciendis velit doloribus eum! Repudiandae, odio?
+               </p>
+               <a href="#">Continue Reading...</a>
+            </article>
+            <article class="post-content" >
+                <h1>Ways to become a Web Developer</h1>
+                <img src="./images/post5.jpg" alt="cat-image">
+               <p class="post-info">
+                    <span class="post-author">
+                        <i class="fa-solid fa-user" style="color: #6d6f74;"></i>
+                        <a href="#">John Doe</a>
+                    </span>
+                    <!-- &nbsp;
+                    &nbsp; -->
+                    <span class="post-date">
+                        <i class="fa-regular fa-calendar-days" style="color: #6d6f74;"></i>
+                        <time>
+                            January 1, 2020
+                        </time>
+                    </span>
+               </p>
+               <p class="post-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia itaque inventore culpa placeat! Cum nam optio, labore, voluptas sunt quam rem cupiditate laboriosam amet reiciendis velit doloribus eum! Repudiandae, odio?
+               </p>
+               <a href="#">Continue Reading...</a>
+            </article>
+        </main>
+        <aside class="sidebar">
+            <div class="about-me">
+                <h2>About The Author</h2>
+                <img src="./images/pic2.jpg" alt="Author-Logo">
+                <h2 class="about-name">Emmanuel</h2>
+                <small>FullStack Web Developer</small>
+                <p class="about-me-bio">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum adipisci eligendi nobis itaque ex? Veniam tempore itaque cumque fugiat iusto voluptatibus odit inventore dolorem numquam maxime, repellendus labore corrupti expedita?
+                </p>
+            </div>
+           <div class="sidebar-content">
+            <h1>The Future of Tech</h1>
+            <img src="./images/post1.jpg" alt="Future of tech image">
+            <p class="post-info">
+                <span class="post-author">
+                    <i class="fa-solid fa-user" style="color: #6d6f74;"></i>
+                    <a href="#">John Doe</a>
+                </span>
+                <!-- &nbsp;
+                &nbsp; -->
+                <span class="post-date">
+                    <i class="fa-regular fa-calendar-days" style="color: #6d6f74;"></i>
+                    <time>
+                        January 1, 2020
+                    </time>
+                </span>
+           </p>
+           <p class="sidebar-post-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia itaque inventore culpa placeat! Cum nam optio, labore, voluptas sunt quam rem cupiditate laboriosam amet reiciendis velit doloribus eum! Repudiandae, odio?
+           </p>
+           <a href="#">Continue Reading...</a>
+           </div>
+           <div class="sidebar-content">
+            <h1>Start Here</h1>
+            <img src="./images/post4.jpg" alt="Future of tech image">
+            <p class="post-info">
+                <span class="post-author">
+                    <i class="fa-solid fa-user" style="color: #6d6f74;"></i>
+                    <a href="#">John Doe</a>
+                </span>
+                <!-- &nbsp;
+                &nbsp; -->
+                <span class="post-date">
+                    <i class="fa-regular fa-calendar-days" style="color: #6d6f74;"></i>
+                    <time>
+                        January 1, 2020
+                    </time>
+                </span>
+           </p>
+           <p class="sidebar-post-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia itaque inventore culpa placeat! Cum nam optio, labore, voluptas sunt quam rem cupiditate laboriosam amet reiciendis velit doloribus eum! Repudiandae, odio?
+           </p>
+           <a href="#">Continue Reading...</a>
+           </div>
+           <div class="sidebar-content">
+            <h1>Think Before you start</h1>
+            <img src="./images/post6.jpg" alt="Future of tech image">
+            <p class="post-info">
+                <span class="post-author">
+                    <i class="fa-solid fa-user" style="color: #6d6f74;"></i>
+                    <a href="#">John Doe</a>
+                </span>
+                <!-- &nbsp;
+                &nbsp; -->
+                <span class="post-date">
+                    <i class="fa-regular fa-calendar-days" style="color: #6d6f74;"></i>
+                    <time>
+                        January 1, 2020
+                    </time>
+                </span>
+           </p>
+           <p class="sidebar-post-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia itaque inventore culpa placeat! Cum nam optio, labore, voluptas sunt quam rem cupiditate laboriosam amet reiciendis velit doloribus eum! Repudiandae, odio?
+           </p>
+           <a href="#">Continue Reading...</a>
+           </div>
+           <div class="sidebar-content">
+            <h1>Learn HTML</h1>
+            <img src="./images/post2.jpg" alt="Future of tech image">
+            <p class="post-info">
+                <span class="post-author">
+                    <i class="fa-solid fa-user" style="color: #6d6f74;"></i>
+                    <a href="#">John Doe</a>
+                </span>
+                <!-- &nbsp;
+                &nbsp; -->
+                <span class="post-date">
+                    <i class="fa-regular fa-calendar-days" style="color: #6d6f74;"></i>
+                    <time>
+                        January 1, 2020
+                    </time>
+                </span>
+           </p>
+           <p class="sidebar-post-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia itaque inventore culpa placeat! Cum nam optio, labore, voluptas sunt quam rem cupiditate laboriosam amet reiciendis velit doloribus eum! Repudiandae, odio?
+           </p>
+           <a href="#">Continue Reading...</a>
+           </div>
+           <div class="sidebar-content">
+            <h1>Sidebar Title</h1>
+            <img src="./images/post8.jpg" alt="Future of tech image">
+           <p class="sidebar-post-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum adipisci eligendi nobis itaque ex? Veniam tempore itaque cumque fugiat iusto voluptatibus odit inventore dolorem numquam maxime, repellendus labore corrupti expedita?
+           </p>
+           </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="about">
+            <h1>
+                <span class="logo-text-first">Dinesh </span>
+                <span class="logo-text-second">Blog</span>
+            </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti a recusandae, molestiae incidunt</p>
+            <div class="contact">
+                <span class="phone-no">
+                        <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                        + (123) 456 789
+                </span>
+                <span class="email">
+                        <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                    <a href="#">support@abc.com</a>
+                </span>
+            </div>
+            <div class="social-media">
+            <a href="#"><i class="fa-brands fa-youtube" style="color: #eac50b;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" style="color: #eac50b;"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter" style="color: #eac50b;"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook" style="color: #eac50b;"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
