@@ -440,4 +440,8 @@ footer{
     .main-container .sidebar .about-me img{
         width: 25%;
     }
+
+    .about{
+        width: 100%;
+    }
 }
