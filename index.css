@@ -451,4 +451,8 @@ footer{
     .about{
         width: 100%;
     }
+
+    .about p{
+        text-align: center;
+    }
 }
